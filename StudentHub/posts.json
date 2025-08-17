@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "author": "chinnuu",
+        "title": "Best Resources for Learning DSA",
+        "content": "Here’s a GitHub repo that has hundreds of DSA problems with solutions. Super useful! Here's the link: https://github.com/bollwarm/DataStructuresAlgorithms?",
+        "tags": [
+            "academics",
+            "dsa",
+            "resources"
+        ],
+        "createdAt": "2025-08-10T09:00:00Z",
+        "likes": 15,
+        "comments": [
+            {
+                "user": "pedopascal",
+                "comment": "Thanks for sharing! Bookmarked this.",
+                "createdAt": "2025-08-10T09:30:00Z"
+            },
+            {
+                "user": "420iq",
+                "comment": "Finally, something better than GeeksforGeeks copy paste 😂",
+                "createdAt": "2025-08-10T10:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "author": "pedopascal",
+        "title": "Should I learn React or Angular?",
+        "content": "I’m confused between React and Angular for frontend. Any advice?",
+        "tags": [
+            "career",
+            "frontend",
+            "react",
+            "angular"
+        ],
+        "createdAt": "2025-08-11T14:20:00Z",
+        "likes": 9,
+        "comments": [
+            {
+                "user": "avenger20",
+                "comment": "React is more popular and easier to start with.",
+                "createdAt": "2025-08-11T15:00:00Z"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "author": "avenger20",
+        "title": "Any tips for third-year CS students?",
+        "content": "I just started college. What should I focus on apart from classes?",
+        "tags": [
+            "student-life",
+            "academics",
+            "freshers"
+        ],
+        "createdAt": "2025-08-12T11:10:00Z",
+        "likes": 20,
+        "comments": [
+            {
+                "user": "chinnuu",
+                "comment": "Join coding contests early! They’ll sharpen your problem-solving.",
+                "createdAt": "2025-08-12T12:00:00Z"
+            },
+            {
+                "user": "420iq",
+                "comment": "Don’t forget to enjoy hostel life too 😎",
+                "createdAt": "2025-08-12T13:15:00Z"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "author": "420iq",
+        "title": "Looking for coding memes",
+        "content": "Send me some coding meme pages",
+        "tags": [
+            "community",
+            "fun",
+            "memes"
+        ],
+        "createdAt": "2025-08-13T17:00:00Z",
+        "likes": 33,
+        "comments": [
+            {
+                "user": "pedopascal",
+                "comment": "Here is one I like : https://www.instagram.com/coding_comedy/",
+                "createdAt": "2025-08-13T17:30:00Z"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "author": "pedopascal",
+        "title": "What games do you all play?",
+        "content": "I play roblox, particularly Grow a Garden",
+        "tags": [
+            "career",
+            "internships",
+            "guide"
+        ],
+        "createdAt": "2025-08-14T08:40:00Z",
+        "likes": 18,
+        "comments": [
+            {
+                "user": "chinnuu",
+                "comment": "Bro do you have a raccoon, I'm willing to trade that for a like 1.5Q, willing to add, ngf",
+                "createdAt": "2025-08-14T09:00:00Z"
+            },
+            {
+                "user": "avenger20",
+                "comment": "Don’t forget LeetCode grind 🔥",
+                "createdAt": "2025-08-14T09:20:00Z"
+            }
+        ]
+    }
+]
