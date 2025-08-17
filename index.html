@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>The Student Hub</title>
+        <link rel="stylesheet" href="styleheader.css">
+        <link rel="stylesheet" href="stylepost.css">
+        <link rel="stylesheet" href="styleindex.css">
+    </head>
+    <body>
+        <nav id="header">
+            <div id="leftNav">
+                <img src="assets/logo.png" alt="logo">
+                <span>The Student Hub</span>
+            </div>
+            <div id="rightNav">
+                <ul>
+                    <li onclick="window.location.href=`index.html`">Home</li>
+                    <li onclick="alert(`This page aren't ready yet`)">About Us</li>
+                    <li onclick="alert(`This page isn't ready yet`)">Contact Us</li>
+                    <li onclick="window.location.href=`profile.html`">Profile</li>
+                    <li id="logbtn">Login</li>
+                </ul>
+            </div>
+        </nav>
+        <div id="mainDiV">
+            <div id="sidebar">
+                <ul>
+                    <li onclick="renderPosts()">Posts</li>
+                    <li onclick="renderMaps()">Roadmaps</li>
+                    <li onclick="renderRepos()">GitHub Repositories</li>
+                </ul>
+            </div>
+            <div id="contentDiv">
+                <div id="postContainer"></div>
+                <div id="mapContainer"></div>
+                <div id="repoContainer"></div>
+            </div>
+            
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

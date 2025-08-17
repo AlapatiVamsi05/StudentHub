@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styleheader.css">
+        <link rel="stylesheet" href="stylelog.css">
+
+    </head>
+    <body>
+        <nav id="header">
+            <div id="leftNav">
+                <img src="assets/logo.png" alt="logo">
+                <span>The Student Hub</span>
+            </div>
+            <div id="rightNav">
+                <ul>
+                    <li onclick="window.location.href=`index.html`">Home</li>
+                    <li onclick="alert(`This page aren't ready yet`)">About Us</li>
+                    <li onclick="alert(`This page isn't ready yet`)">Contact Us</li>
+                    <li onclick="window.location.href=`profile.html`">Profile</li>
+                    <li id="logbtn">Login</li>
+                </ul>
+            </div>
+        </nav>
+        <div id="centerDiv">
+            <form id="loginForm">
+                <label>Username or Email: <input type="text" id="name"></label>
+                <label>Password: <input type="password" id="password"></label>
+                <button type="submit">Sign in</button>
+            </form>
+            <div id="exampleInfo">
+                <p> use username: <strong>pedopascal</strong> and password: <strong>asdfjkl098</strong> for testing</p><br>
+            </div>
+        </div>
+        
+    </body>
+    <script>
+            if(localStorage.getItem("loggedinUserid")){
+                document.querySelector("#logbtn").textContent="logout"
+            }
+            document.querySelector("#logbtn").addEventListener("click",()=>{
+                if(localStorage.getItem("loggedinUserid")){
+                    localStorage.clear("loggedinUserid")
+                    alert("loggedout")
+                    window.location.href=`index.html`
+                }else{
+                    window.location.href=`login.html`
+                }
+            })
+            document.querySelector("#loginForm").addEventListener("submit",(e)=>{
+                e.preventDefault()
+                let uname = document.querySelector("#name").value
+                let password = document.querySelector("#password").value
+                if(!uname || !password){
+                    alert("Please fill the form")
+                }else{
+                    let a = true
+                    fetch("users.json")
+                    .then(res=>res.json())
+                    .then(users=>{
+                        users.forEach(user => {
+                            let userId = user.id
+                            let registeredUsername = user.username
+                            let registeredEmail = user.email
+                            let registeredPassword = user.password
+                            if((registeredUsername==uname || registeredEmail==uname) && registeredPassword==password){
+                                alert("Welcome ",registeredUsername)
+                                localStorage.setItem("loggedinUserid", userId)
+                                a = false
+                                window.location.href=`profile.html`
+                            }
+                        })
+                    })
+                    setTimeout(()=>{
+                        if (a){
+                            alert("No such user Found")
+                            window.location.href=`login.html`
+                        }
+                    },1000)
+                    
+                    
+                }
+            })
+    </script>
+</html>
