@@ -16,7 +16,7 @@ function Header({ setPage, isLoggedIn, handleLogout }) {
                     {isLoggedIn ? (
                         <li id="logbtn" onClick={handleLogout}>Logout</li>
                     ) : (
-                        <li id="logbtn" onClick={() => setPage("login")}>Logni</li>
+                        <li id="logbtn" onClick={() => setPage("login")}>Login</li>
                     )}
                 </ul>
             </div>
